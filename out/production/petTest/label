@@ -1,0 +1,27 @@
+ImageIcon image = new ImageIcon("bolso.png");
+
+
+    frame.setVisible(true);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setSize(800,800);
+    Border border = BorderFactory.createLineBorder(Color.GREEN,3);
+    //frame.setLayout(null);
+
+
+    label.setText("Bro do you even code?");
+    label.setVerticalTextPosition(JLabel.TOP);
+    label.setHorizontalTextPosition(JLabel.CENTER);
+    label.setForeground(Color.DARK_GRAY);
+    label.setFont(new Font("MV Boli",Font.PLAIN,20));
+    label.setIconTextGap(50);
+    label.setBackground(Color.BLACK);
+    label.setOpaque(true);
+    label.setBorder(border);
+    label.setVerticalAlignment(JLabel.CENTER);
+    label.setHorizontalAlignment(JLabel.CENTER);
+   // label.setBounds(100,100,250,250);
+
+
+    label.setIcon(image);
+    frame.add(label);
+    frame.pack();
